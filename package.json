@@ -3,17 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "engines": {
-    "node": "18.12.0",
-    "npm": "8.19.2"
-  },
   "scripts": {
     "client-install": "npm install --prefix client",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "both": "concurrently \"npm run server\" \"npm run client\"",
     "start": "node server.js",
-    "build": "cd ./client && npm i && npm run build && cd .. && npm run start"
+    "build": "cd ./client && npm i && npm run build && cd .."
   },
   "keywords": [],
   "author": "",
