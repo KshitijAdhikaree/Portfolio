@@ -13,7 +13,7 @@
     "client": "npm start --prefix client",
     "both": "concurrently \"npm run server\" \"npm run client\"",
     "start": "node server.js",
-    "build": "cd ./client && npm run build && cd .. && npm run start"
+    "build": "cd ./client && npm i && npm run build && cd .. && npm run start"
   },
   "keywords": [],
   "author": "",
