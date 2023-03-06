@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import SectionTitle from "../../components/SectionTitle";
 
 function About() {
-  const { loading, portfolioData } = useSelector((state) => state.root);
+  const { portfolioData } = useSelector((state) => state.root);
   const { about } = portfolioData;
   const { skills, lottieURL, description1, description2 } = about;
   return (
@@ -33,7 +33,7 @@ function About() {
 
         <div className="flex flex-wrap gap-12 mt-6 ">
           {skills.map((skill, index) => (
-            <div className="border border-tertiary py-3 px-8 rounded-xl">
+            <div className="border border-tertiary py-3 px-8 rounded-xl ">
               <h1 className="text-tertiary">{skill}</h1>
             </div>
           ))}
