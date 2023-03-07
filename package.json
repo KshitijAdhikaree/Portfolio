@@ -6,7 +6,6 @@
   "scripts": {
     "client-install": "npm install --prefix client",
     "server": "nodemon server.js",
-    "build": "react-scripts build",
     "client": "npm start --prefix client",
     "both": "concurrently \"npm run server\" \"npm run client\"",
     "start": "node server.js"
@@ -22,3 +21,4 @@
     "nodemon": "^2.0.20"
   }
 }
+
